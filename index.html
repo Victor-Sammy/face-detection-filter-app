@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="face-api.min.js"></script>
+    <script defer src="detection.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div>
+      <div id="container" class="">
+        <video id="video" width="640px" height="480px" autoplay muted></video>
+        <div id="videoBackground"></div>
+        <button id="downloadButton">Capture</button>
+        <img id="overlayImage" style="position: absolute; display: 'none'" />
+      </div>
+
+      <div>
+        <button id="toggleDrawBoxButton">Off face detect</button>
+      </div>
+
+      <div id="image-container">
+        <button id="toggleButton" style="margin-bottom: 10px">OFF</button>
+        <div id="img">
+          <img
+            id="image1"
+            class="clickable-image"
+            src="images/flowers.gif"
+            alt="clickable-image"
+          />
+        </div>
+        <div id="img">
+          <img
+            id="image2"
+            class="clickable-image"
+            src="images/stars.gif"
+            alt="clickable-image"
+          />
+        </div>
+        <div id="img">
+          <img
+            id="image3"
+            class="clickable-image"
+            src="images/bat-mask.gif"
+            alt="clickable-image"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

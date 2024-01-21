@@ -1,0 +1,371 @@
+body {
+  margin: 0;
+  padding-top: 10%;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: #000;
+}
+
+canvas{
+  position: absolute;
+  z-index: 1;
+}
+
+#toggleDrawBoxButton {
+  width: 20%;
+  margin-left: 40%;
+  border-radius: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#container {
+  position: relative;
+  width: 640px;
+  border: 1px solid #3422d0;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+#image-container {
+  width: 80%;
+  height: 90px;
+  position: absolute;
+  bottom: 8%;
+  left: 10%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 3%;
+}
+
+#img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  height: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+#image1 {
+  width: 100%;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+button {
+  width: 20%;
+  height: 90px;
+  border-radius: 50%;
+  font-weight: 500;
+}
+
+#image2 {
+  width: 100%;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+#image3 {
+  width: 100%;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+#overlayImage {
+  position: absolute;
+  z-index: 2; /* Adjust the value based on your needs */
+}
+  
+#video{
+  border: 3px #c38b32 solid;
+  border-radius: 10px;
+  width: 640px;
+}
+
+#videoBackground {
+  position: absolute;
+  top: 0;
+  border: 2px solid #921313;
+  width: 100%;
+  height: 480px;
+  opacity: 20%;
+}
+
+#downloadButton {
+  z-index: 3;
+  position: absolute;
+  bottom: 2%;
+  left: 40%;
+  width: 20%;
+  height: 90px;
+  border: none;
+  border-radius: 50%;
+  font-weight: 500;
+  background: radial-gradient(circle, #e9e9e9, #949292);
+}
+
+@media screen and (max-width: 550px) {
+  body {
+    padding-top: 5%;
+  }
+  #container {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  #video {
+    width: 95%;
+    margin-left: 2.5%;
+  }
+
+  canvas{
+    top: 16%;
+    width: 305px;
+    height: 260px;
+  }
+
+  #toggleDrawBoxButton {
+    width: 40%;
+    margin-left: 30%;
+    transform: translateY(20%);
+  }
+
+  #image-container {
+    width: 95%;
+    height: 85px;
+    left: 2.5%;
+    bottom: 5%;
+    gap: 5%;
+  }
+
+  #img {
+    width: 22.5%;
+    border-radius: 50%;
+    height: 85px;
+  }
+
+  #image1 {
+    width: 100%;
+    height: 85px;
+    object-fit: contain;
+  }
+  
+  button {
+    width: 22.5%;
+    height: 85px;
+  }
+  
+  #image2 {
+    width: 100%;
+    height: 85px;
+    object-fit: contain;
+  }
+
+  #image3 {
+    width: 100%;
+    height: 85px;
+    object-fit: contain;
+  }
+
+  #downloadButton {
+    width: 20%;
+    height: 75px;
+  }
+}
+
+@media (min-width:700px) and (max-width:850px) {
+  #img {
+    height: 110px;
+  }
+  button {
+    height: 110px;
+  }
+
+  #downloadButton {
+    height: 100px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    padding-top: 1%;
+  }
+
+  #image-container {
+    width: 60%;
+    height: 90px;
+    bottom: 1%;
+    left: 20%;
+    gap: 7%;
+  }
+  
+  #img {
+    width: 15%;
+    height: 90px;
+  }
+  
+  #image1 {
+    width: 100%;
+    height: 90px !important;
+  }
+  
+  button {
+    width: 15%;
+    height: 90px;
+  }
+  
+  #image2 {
+    width: 100%;
+    height: 90px !important;
+  }
+  
+  #image3 {
+    width: 100%;
+    height: 90px !important;
+  }
+
+  #toggleDrawBoxButton {
+    width: 20%;
+    margin-left: 40%;
+    transform: translateY(-16px);
+  }
+
+  #downloadButton {
+    width: 20%;
+    height: 85px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  body {
+    padding-top: 3%;
+  }
+
+  #image-container {
+    width: 60%;
+    height: 90px;
+    bottom: 3%;
+    left: 20%;
+    gap: 7%;
+  }
+  
+  #img {
+    width: 13.25%;
+    height: 90px;
+  }
+  
+  #image1 {
+    width: 100%;
+    height: 90px !important;
+  }
+  
+  button {
+    width: 13.25%;
+    height: 90px;
+  }
+  
+  #image2 {
+    width: 100%;
+    height: 90px !important;
+  }
+  
+  #image3 {
+    width: 100%;
+    height: 90px !important;
+  }
+
+  #toggleDrawBoxButton {
+    width: 20%;
+    margin-left: 40%;
+    transform: translateY(-16px);
+  }
+
+  #downloadButton {
+    width: 20%;
+    height: 90px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  #image-container {
+    height: 100px;
+  }
+  
+  #img {
+    height: 100px;
+  }
+  
+  #image1 {
+    height: 100px !important;
+  }
+  
+  button {
+    height: 100px;
+  }
+  
+  #image2 {
+    height: 100px !important;
+  }
+  
+  #image3 {
+    height: 100px !important;
+  }
+
+  #toggleDrawBoxButton {
+    width: 20%;
+    margin-left: 40%;
+    transform: translateY(-16px);
+  }
+
+  #downloadButton {
+    width: 20%;
+    height: 90px;
+  }
+}
+@media screen and (min-width: 1900px) {
+  #image-container {
+    height: 130px;
+  }
+  
+  #img {
+    height: 130px;
+  }
+  
+  #image1 {
+    height: 130px !important;
+  }
+  
+  button {
+    height: 130px;
+  }
+  
+  #image2 {
+    height: 130px !important;
+  }
+  
+  #image3 {
+    height: 130px !important;
+  }
+
+  #toggleDrawBoxButton {
+    width: 20%;
+    margin-left: 40%;
+    transform: translateY(-16px);
+  }
+
+  #downloadButton {
+    width: 20%;
+    height: 90px;
+  }
+}
